@@ -14,7 +14,7 @@ def simple_predict(x, theta):
     This function should not raise any Exception.
     """
     if (not isinstance(x, np.ndarray) or not isinstance(theta, np.ndarray)
-            or len(x) == 0 or len(theta) != 2):
+       or len(x) == 0 or len(theta) != 2):
         return None
     else:
         y = theta[0] + theta[1] * x
@@ -23,11 +23,7 @@ def simple_predict(x, theta):
 
 if __name__ == '__main__':
     x = np.arange(1, 6)
-    theta1 = np.array([5, 0])
-    print(simple_predict(x, theta1))
-    theta2 = np.array([0, 1])
-    print(simple_predict(x, theta2))
-    theta3 = np.array([5, 3])
-    print(simple_predict(x, theta3))
-    theta4 = np.array([-3, 1])
-    print(simple_predict(x, theta4))
+    # Example 1:,
+    theta1 = np.array([-3, 1])
+    y = simple_predict(x, theta1)
+    print(y)

@@ -61,7 +61,6 @@ if __name__ == '__main__':
     y_hat3 = predict_(x3, theta3)
     y3 = np.array([2, 14, -13, 5, 12, 4, -19])
     # Example 5:
-    # plot(x3, y3, theta3)
     # print(cost_elem_(y3, y_hat3))
     print(cost_(y3, y_hat3))
     print(cost_(y3, y3))
